@@ -4,126 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Harshit Raj | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-    nav {
-      background: #111827;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .project-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-card a {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-      padding: 1rem;
-    }
-    .project-card h3 {
-      margin: 0.5rem 0;
-    }
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
   <header>
-    <h1>Harshit Raj</h1>
-    <p>Data Engineer & Analyst | Passionate About Business Strategy & Leadership</p>
+    <div class="container">
+      <h1>Harshit Raj</h1>
+      <p>Data Engineer | Analyst | Future Business Leader</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Data Engineer & Analyst passionate about leadership, strategy, and using data to drive meaningful decisions. Currently upskilling through the McKinsey Forward program.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate Data Engineer and Analyst with strong business acumen and leadership vision. 
+        Currently part of McKinsey Forward Program, exploring advanced strategies and learning from global leaders.
+      </p>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <a href="https://github.com/harshitraj04/project1" target="_blank">
-          <h3>Project 1</h3>
-          <p>Brief description of Project 1.</p>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://github.com/harshitraj04/project2" target="_blank">
-          <h3>Project 2</h3>
-          <p>Brief description of Project 2.</p>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://github.com/harshitraj04/project3" target="_blank">
-          <h3>Project 3</h3>
-          <p>Brief description of Project 3.</p>
-        </a>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list" id="project-list">
+        <!-- Project cards will be dynamically injected here -->
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: rachitgupt472000@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/harshitraj2000/" target="_blank">linkedin.com/in/harshitraj04</a></p>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>📧 harshitraj04@example.com</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/harshitraj04" target="_blank">LinkedIn Profile</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Harshit Raj. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Harshit Raj. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
