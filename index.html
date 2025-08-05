@@ -4,41 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Harshit Raj | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: #4e54c8;
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4e54c8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: white;
+      color: #4e54c8;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .project {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-left: 5px solid #4e54c8;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eaeaea;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Hi, I'm Harshit Raj</h1>
     <p>Data Engineer | Analyst | AI Enthusiast</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <a href="#projects" class="btn">View My Projects</a>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m passionate about data, strategy, and technology. With experience in data engineering, analytics, and leadership programs like McKinsey Forward, I thrive on solving business challenges with data-driven solutions.</p>
+    <p>
+      I'm a Data Engineer & Analyst with a passion for technology, strategy, and solving real-world problems through data.  
+      I have experience working at Ford Motor Company, and I've completed the McKinsey Forward Program.  
+      I enjoy building scalable data pipelines and insightful dashboards that drive business impact.
+    </p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>🔧 Charging Data Product - Ford</h3>
-      <p>Led migration to GCP, implemented Airflow pipelines, and optimized job performance by 25%.</p>
+      <h3>🔧 Charging Data Platform – Ford</h3>
+      <p>Built robust GCP pipelines using Airflow and optimized job execution time by 25% for EV data analytics.</p>
     </div>
     <div class="project">
       <h3>📊 KPI Dashboard</h3>
-      <p>Built a real-time Power BI dashboard integrating SQL, Python, and Databricks to track product health.</p>
+      <p>Designed and implemented Power BI dashboards integrating Python, SQL, and Databricks for real-time performance tracking.</p>
+    </div>
+    <div class="project">
+      <h3>📦 Product Data Integration</h3>
+      <p>Automated product data ingestion from MES & PLC using Spark and orchestrated jobs with Databricks & Airflow.</p>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <p>Email: <a href="mailto:harshit@email.com">harshit@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/harshitraj" target="_blank">harshitraj</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/harshitraj" target="_blank">linkedin.com/in/harshitraj</a></p>
+    <p>GitHub: <a href="https://github.com/harshitraj04" target="_blank">harshitraj04</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/harshitraj04" target="_blank">linkedin.com/in/harshitraj04</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Harshit Raj. Built with ❤️</p>
+    <p>© 2025 Harshit Raj. Built with ❤️ and GitHub Pages.</p>
   </footer>
+
 </body>
 </html>
